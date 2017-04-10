@@ -9,10 +9,10 @@ rqtech_basic_reliquant_interfacing = {
 	is_rare = yes
 	category = { computing }
 	ai_update_type = all
-	weight = 300000
+	weight = 0
 
 	weight_modifier = {
-		factor = 1
+		factor = 0
 	}
 	
 	ai_weight = {
@@ -31,7 +31,7 @@ rqtech_basic_reliquant_interfacing = {
 rqtech_improved_reliquant_interfacing = {
 	area = physics
 	cost = 4772
-	tier = 4
+	tier = 0
 	is_rare = yes
 	category = { computing }
 	ai_update_type = all
@@ -48,9 +48,9 @@ rqtech_improved_reliquant_interfacing = {
 	prerequisites = { "rqtech_basic_reliquant_interfacing" }
 	
 	prereqfor_desc = {
-		component = {
-			title = "TECH_UNLOCK_RELIQUANTS_TECH_TITLE"
-			desc = "TECH_UNLOCK_RELIQUANTS_TECH_DESC"
+		custom = {
+			title = "TECH_UNLOCK_RELIQUANTS_WEAPONS_TITLE"
+			desc = "TECH_UNLOCK_RELIQUANTS_WEAPONS_DESC"
 		}
 	}
 }
