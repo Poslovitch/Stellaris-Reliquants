@@ -1,0 +1,8 @@
+﻿l_french:
+  rqtech_basic_reliquant_interfacing: "Interfaçage Reliquant basique"
+  rqtech_basic_reliquant_interfacing_desc: "Les Reliquants ont mis au point un système informatique particulièrement efficace, mais aussi très différent de celui que nous utilisons. Nous devons développer une interface pour nous permettre de nous connecter à leur technologie."
+  rqtech_improved_reliquant_interfacing: "Interfaçage Reliquant amélioré"
+  rqtech_improved_reliquant_interfacing: "Nous maîtrisons la technologie reliquane, toutefois il semble que notre interfaçage n'est pas des plus efficaces. Nous devrions l'améliorer, surtout si nous désirons prendre le contrôle de structures reliquanes offensives."
+  
+  TECH_UNLOCK_RELIQUANTS_TECH_TITLE:0 "§HPermet§! Utiliser les technologies Reliquanes"
+  TECH_UNLOCK_RELIQUANTS_TECH_DESC:0 "§HUtiliser les technologies Reliquanes\n§!Permet à votre empire d'utiliser et de contrôler dans une moindre mesure la technologie reliquane non-offensive."

@@ -1,0 +1,56 @@
+# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 10/4/17 18:29:50
+
+# Basic Reliquant Interfacing
+rqtech_basic_reliquant_interfacing = {
+	area = physics
+	cost = 2800
+	tier = 0
+	is_rare = yes
+	category = { computing }
+	ai_update_type = all
+	weight = 300000
+
+	weight_modifier = {
+		factor = 1
+	}
+	
+	ai_weight = {
+		factor = 0
+	}
+		
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_RELIQUANTS_TECH_TITLE"
+			desc = "TECH_UNLOCK_RELIQUANTS_TECH_DESC"
+		}
+	}
+}
+
+# Improved Reliquant Interfacing
+rqtech_improved_reliquant_interfacing = {
+	area = physics
+	cost = 4772
+	tier = 4
+	is_rare = yes
+	category = { computing }
+	ai_update_type = all
+	weight = 0
+
+	weight_modifier = {
+		factor = 0
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+	
+	prerequisites = { "rqtech_basic_reliquant_interfacing" }
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_RELIQUANTS_TECH_TITLE"
+			desc = "TECH_UNLOCK_RELIQUANTS_TECH_DESC"
+		}
+	}
+}
