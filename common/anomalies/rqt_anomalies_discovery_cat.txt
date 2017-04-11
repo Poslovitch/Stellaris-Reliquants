@@ -1,0 +1,33 @@
+# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 11/4/17 13:22:35
+
+# Reliquants Ruins - The discovery of a strange precursor
+anomaly_category = {
+	key = "rqt_anomaly_discovery_cat"
+	desc = "rqt_anomaly_discovery_cat_desc"
+	picture = GFX_evt_archaeological_dig
+	level = 2
+	
+	spawn_chance = {
+		modifier = {
+			add = 2
+			is_planet_class = pc_desert
+			FROM.owner = {
+				is_ai = no
+				NOT = { has_country_flag = rqt_generated_reliquants }
+			}
+		}
+	}
+	
+	on_spawn = {}
+	
+	on_success = {}
+	
+	on_fail = {
+		ship_event = { id = rqt_discovery.11 }
+	}
+	
+	on_critical_fail = {
+		ship_event = { id = rqt_discovery.21 }
+	}
+}

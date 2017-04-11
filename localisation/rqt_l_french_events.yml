@@ -1,0 +1,23 @@
+﻿# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 11/4/17 14:49:42
+
+l_french:
+ rqt_anomaly_discovery_cat: "Etranges ruines"
+ rqt_anomaly_discovery_cat_desc: "D'étranges ruines sur [Root.GetName] émettent un signal étrange lorsque nous les scannons. Nous devrions aller voir de plus près."
+ rqt_discovery.1.name: "Une ancienne civilisation"
+ rqt_discovery.1.desc: "Il semblerait que nous ayons découvert les ruines d'une très ancienne civilisation ayant prospéré dans la Galaxie il y a plusieurs millions d'années.\nSelon les glyphes que nous sommes parvenus à \"traduire\", les Reliquants (il s'agit du nom proposé par [From.GetLeaderName] qui a été unanimement accepté par l'équipage) ont construit de nombreux équipements qui pourraient toujours exister et qui pourraient nous être utiles."
+ rqt_discovery.1.a: "Continuons les recherches."
+ rqt_discovery.1.b: "Nous ne pouvons pas nous baser sur des spéculations."
+ rqt_discovery.11.name: "Une ancienne civilisation"
+ rqt_discovery.11.desc: "Il semblerait que nous ayons découvert les ruines d'une très ancienne civilisation qui aurait prospéré dans la Galaxie il y a plusieurs millions d'années.\nCette civilisation aurait disparu après une longue guerre contre un ennemi mystérieux, les \"Reliques\". Ces ruines n'étant rien de plus qu'un monument de comémoration, nous n'avons aucun intérêt à nous y intéresser davantage."
+ rqt_discovery.11.a: "Intéressant."
+ rqt_discovery.21.name: "Des ruines, des ruines, rien que des ruines"
+ rqt_discovery.21.desc: "Rien à faire. Nous avons pensé à tout, et nous ne trouvons aucune utilité ou raison d'être à ces morceaux d'acier gravé s'élevant vers les cieux."
+ rqt_discovery.21.a: "Dommage."
+ rqt_discovery.later.name: "Rapport sur les ruines des Reliques"
+ rqt_discovery.later.desc: "Un scientifique a désiré vous transmettre ce message:\n\n\"Nous nous sommes trompés. Les ruines que nous avons découvert il y a quelques années et que nous pensions être comémoratives d'une guerre hypothétique ne sont pas ce que nous pensions.\nElles sont la création des \"Reliquants\", une très ancienne civilisation ayant prospéré dans la Galaxie il y a plusieurs millions d'années. J'ai analysé tous les rapports de l'expédition et j'ai également pu traduire en partie les inscriptions avec l'aide de quelques collègues. Les Reliquants possédaient une technologie très avancée, et certaines de leurs créations pourraient toujours être fonctionelles aujourd'hui.\n\nNous devrions enquêter sur leur histoire.\""
+ rqt_discovery.later.a: "Lancez les recherches!"
+ rqt_discovery.later.b: "Nous avons d'autres priorités."
+ 
+ reliquants_chain_title: "Précurseurs: les Reliquants"
+ reliquants_chain_desc: "yep, faut travailler dessus maintenant"

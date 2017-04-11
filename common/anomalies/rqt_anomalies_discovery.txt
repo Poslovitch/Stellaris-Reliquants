@@ -1,0 +1,13 @@
+# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 11/4/17 13:22:32
+
+anomaly = {
+	event = rqt_discovery.1
+	category = "rqt_anomaly_discovery_cat"
+	
+	weight = 1
+	
+	potential = {
+		always = yes
+	}
+}

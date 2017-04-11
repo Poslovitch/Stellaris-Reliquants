@@ -1,0 +1,96 @@
+# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 11/4/17 13:23:01
+
+namespace = rqt_discovery
+
+### Discovery of the Reliquants
+# Ruins - success: launch Reliquants event-chain immediatly, or stop if the player don't want
+ship_event = {
+	id = rqt_discovery.1
+	title = "rqt_discovery.1.name"
+	desc = "rqt_discovery.1.desc"
+	picture = GFX_evt_archaeological_dig
+	location = FROM
+	
+	is_triggered_only = yes
+	
+	immediate = { owner = { set_country_flag = rqt_generated_reliquants } }
+	
+	option = {
+		name = "rqt_discovery.1.a"
+		owner = {
+			begin_event_chain = {
+				event_chain = "reliquants_chain"
+				target = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = "rqt_discovery.1.b"
+		owner = { add_influence = 25 }
+		leader = { add_experience = 100 }
+	}
+}
+
+# Ruins - failure: launch Reliquants event-chain about 20 years later (a scientist discovered them later)
+ship_event = {
+	id = rqt_discovery.11
+	title = "rqt_discovery.11.name"
+	desc = "rqt_discovery.11.desc"
+	picture = GFX_evt_archaeological_dig
+	location = FROM
+	
+	is_triggered_only = yes
+	
+	immediate = { owner = { set_country_flag = rqt_generated_reliquants } }
+	
+	option = {
+		name = "rqt_discovery.11.a"
+		hidden_effect = {
+			owner = { country_event = { id = rqt_discovery.later days = 7300 random = 1000 } }
+		}
+	}
+}
+
+# Ruins - critical failure: there is nothing. Don't launch anything.
+ship_event = {
+	id = rqt_discovery.21
+	title = "rqt_discovery.21.name"
+	desc = "rqt_discovery.21.desc"
+	picture = GFX_evt_archaeological_dig
+	location = FROM
+	
+	is_triggered_only = yes
+	
+	immediate = { owner = { set_country_flag = rqt_generated_reliquants } }
+	
+	option = {
+		name = "rqt_discovery.21.a"
+	}
+}
+
+# A scientist didn't give up after the failure when exploring the Reliquants' ruins.
+country_event = {
+	id = rqt_discovery.later
+	title = "rqt_discovery.later.name"
+	desc = "rqt_discovery.later.desc"
+	picture = GFX_evt_archaeological_dig
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rqt_discovery.later.a"
+		ROOT = {
+			begin_event_chain = {
+				event_chain = "reliquants_chain"
+				target = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = "rqt_discovery.later.b"
+		ROOT = { add_influence = 100 }
+	}
+}
