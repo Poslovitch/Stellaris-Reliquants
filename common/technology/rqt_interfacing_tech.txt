@@ -4,7 +4,7 @@
 # Basic Reliquant Interfacing
 rqtech_basic_reliquant_interfacing = {
 	area = physics
-	cost = 2800
+	cost = 1600
 	tier = 0
 	is_rare = yes
 	category = { computing }
@@ -30,7 +30,7 @@ rqtech_basic_reliquant_interfacing = {
 # Improved Reliquant Interfacing
 rqtech_improved_reliquant_interfacing = {
 	area = physics
-	cost = 4772
+	cost = 2800
 	tier = 0
 	is_rare = yes
 	category = { computing }

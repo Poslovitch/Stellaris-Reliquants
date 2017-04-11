@@ -25,3 +25,31 @@ rqtech_radiative_terraforming_protocol = {
 		terraform_speed_mult = 0.2
 	}
 }
+
+# Reliquant Combat Processor
+rqtech_reliquant_combat_processor = {
+	area = physics
+	cost = 3000
+	tier = 0
+	is_rare = yes
+	category = { computing }
+	ai_update_type = military
+	weight = 0
+	
+	weight_modifier = {
+		factor = 0
+	}
+	
+	ai_weight = {
+		factor = 0
+	}
+	
+	prerequisites = { "rqtech_improved_reliquant_interfacing" "tech_combat_computers_1" }
+	
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_RELIQUANT_COMBAT_PROCESSOR_TITLE"
+			desc = "TECH_UNLOCK_RELIQUANT_COMBAT_PROCESSOR_DESC"
+		}
+	}
+}

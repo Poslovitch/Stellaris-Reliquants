@@ -14,3 +14,7 @@ l_french:
   
   rqtech_radiative_terraforming_protocol: "Protocole de Terraformation Radiative"
   rqtech_radiative_terraforming_protocol_desc: "La méthode de terraformation des Reliquants est particulièrement efficace. Ils construisent en orbite de la planète des \"Sauveurs\", des stations qui vont bombarder la planète de radiations spécifiques. Nous ne savons pas encore en détail comment cela fonctionne, toutefois nous pouvons adapter cette technologie pour accélérer notre propre processus de terraformation."
+  rqtech_reliquant_combat_processor: "Processeurs de combat Reliquants"
+  rqtech_reliquant_combat_processor_desc: "Les drones Reliquants se montrent très puissants et rapides quand ils sont en groupe. Nous avons récupéré le noyau de quelques uns. Nous pouvons donc développer à partir de ceux-ci des processeurs de combat plus efficaces."
+  TECH_UNLOCK_RELIQUANT_COMBAT_PROCESSOR_TITLE: "unlock component"
+  TECH_UNLOCK_RELIQUANT_COMBAT_PROCESSOR_DESC: "blaabla"
