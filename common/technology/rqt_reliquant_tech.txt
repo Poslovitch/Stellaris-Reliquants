@@ -1,0 +1,27 @@
+# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 11/4/17 9:53:33
+
+# Radiative Terraforming Protocol
+rqtech_radiative_terraforming_protocol = {
+	area = society
+	cost = 2600
+	tier = 0
+	is_rare = yes
+	category = { new_worlds }
+	ai_update_type = all
+	weight = 0
+	
+	weight_modifier = {
+		factor = 0
+	}
+	
+	ai_weight = {
+		factor = 0
+	}
+	
+	prerequisites = { "rqtech_basic_reliquant_interfacing" "tech_atmospheric_manipulation" }
+	
+	modifier = {
+		terraform_speed_mult = 0.2
+	}
+}
