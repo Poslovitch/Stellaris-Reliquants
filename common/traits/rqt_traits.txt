@@ -1,0 +1,25 @@
+# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 11/4/17 10:15:16
+
+rqtrait_reliquants_specialist = {
+	cost = 1
+	icon = ""
+	initial = no
+	modification = no
+	
+	leader_trait = yes
+	leader_class = { scientist }
+	
+	prerequisites = { rqtech_basic_reliquant_interfacing }
+	
+	ai_categories = { survey }
+	ai_weight = { 100 }
+	
+	custom_tooltip = rqtrait_reliquants_specialist_tooltip
+		self_modifier = {
+			
+			# Every Reliquants anomaly category needs to be listed here
+			rqt_reliquants_cat_1_research_speed_mult = 0.5
+			rqt_reliquants_cat_1_research_fail_risk_add = -0.25
+		}
+}

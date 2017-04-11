@@ -1,0 +1,11 @@
+﻿# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 11/4/17 10:32:47
+
+l_french:
+  
+ ####################################
+ # Leader Traits
+ ####################################
+ 
+ rqtrait_reliquants_specialist: "Spécialiste des Reliquants"
+ rqtrait_reliquants_specialist_desc: "Cette personnalité est devenue une grande spécialiste des Reliquants après avoir passé beaucoup de temps à enquêter sur eux."
