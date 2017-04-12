@@ -9,3 +9,14 @@ l_french:
  
  rqtrait_reliquants_specialist: "Spécialiste des Reliquants"
  rqtrait_reliquants_specialist_desc: "Cette personnalité est devenue une grande spécialiste des Reliquants après avoir passé beaucoup de temps à enquêter sur eux."
+ 
+ ####################################
+ # Components
+ ####################################
+ 
+ RELIQUANT_COMBAT_PROCESSOR: "Processeur de combat Reliquant"
+ RELIQUANT_COMBAT_PROCESSOR_DESC: "L'I.A. Reliquante embarquée suit des protocoles et tactiques militaires très audacieuses, toutefois au détriment des chances de survie de l'équipage (et ce en raison de la nature robotique des Reliquants, qui ainsi ne se souciaient pas de la mort)."
+ CORVETTE_RELIQUANT_COMBAT_PROCESSOR: "Processeur de combat Reliquant (corvette)"
+ DESTROYER_RELIQUANT_COMBAT_PROCESSOR: "Processeur de combat Reliquant (destroyer)"
+ CRUISER_RELIQUANT_COMBAT_PROCESSOR: "Processeur de combat Reliquant (croiseur)"
+ BATTLESHIP_RELIQUANT_COMBAT_PROCESSOR: "Processeur de combat Reliquant (cuirassé)"

@@ -1,0 +1,151 @@
+# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 12/4/17 11:00:47
+
+### Reliquant Combat Processor
+# Default
+utility_component_template = {
+	key = "RELIQUANT_COMBAT_PROCESSOR"
+	size = small
+	icon = "GFX_ship_part_computer_sentient"
+	icon_frame = 1
+	power = -20
+	cost = 25
+	ship_behavior = "default"
+	hidden = yes
+	
+	class_restriction = { shipclass_military }
+	component_set = "combat_computers"
+	
+	ship_modifier = {
+		ship_accuracy_add = 8
+		ship_fire_rate_mult = 0.10
+		ship_weapon_damage = 0.10
+	}
+	
+	modifier = {
+		ship_evasion_add = 12
+		ship_combat_speed_mult = 0.10
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Corvette
+utility_component_template = {
+	key = "CORVETTE_RELIQUANT_COMBAT_PROCESSOR"
+	size = small
+	icon = "GFX_ship_part_computer_sentient"
+	icon_frame = 1
+	power = -20
+	cost = 25
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette }
+	component_set = "combat_computers"
+	ship_behavior = "corvette_default"
+	prerequisites = { "rqtech_reliquant_combat_processor" }
+	
+	modifier = {
+		ship_evasion_add = 8
+		ship_combat_speed_mult = 0.22
+	}
+	
+	ship_modifier = {
+		ship_accuracy_add = 6
+		ship_tracking_add = 1
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Destroyer
+utility_component_template = {
+	key = "DESTROYER_RELIQUANT_COMBAT_PROCESSOR"
+	size = small
+	icon = "GFX_ship_part_computer_sentient"
+	icon_frame = 1
+	power = -20
+	cost = 25
+	class_restriction = { shipclass_military }
+	size_restriction = { destroyer }
+	component_set = "combat_computers"
+	ship_behavior = "destroyer_default"
+	prerequisites = { "rqtech_reliquant_combat_processor" }
+	
+	modifier = {
+		ship_evasion_add = 1
+		ship_combat_speed_mult = -0.05
+	}
+	
+	ship_modifier = {
+		ship_accuracy_add = 8
+		ship_tracking_add = 15
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Cruiser
+utility_component_template = {
+	key = "CRUISER_RELIQUANT_COMBAT_PROCESSOR"
+	size = small
+	icon = "GFX_ship_part_computer_sentient"
+	icon_frame = 1
+	power = -20
+	cost = 25
+	class_restriction = { shipclass_military }
+	size_restriction = { cruiser }
+	component_set = "combat_computers"
+	ship_behavior = "cruiser_default"
+	prerequisites = { "rqtech_reliquant_combat_processor" }
+	
+	modifier = {
+		ship_evasion_add = 1
+		ship_combat_speed_mult = -0.07
+	}
+	
+	ship_modifier = {
+		ship_accuracy_add = 7
+		ship_tracking_add = 11
+		ship_fire_rate_mult = 0.12
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Battleship
+utility_component_template = {
+	key = "BATTLESHIP_RELIQUANT_COMBAT_PROCESSOR"
+	size = small
+	icon = "GFX_ship_part_computer_sentient"
+	icon_frame = 1
+	power = -20
+	cost = 25
+	class_restriction = { shipclass_military }
+	size_restriction = { battleship }
+	component_set = "combat_computers"
+	ship_behavior = "battleship_default"
+	prerequisites = { "rqtech_reliquant_combat_processor" }
+	
+	modifier = {
+		ship_combat_speed_mult = -0.07
+	}
+	
+	ship_modifier = {
+		ship_accuracy_add = 8
+		ship_tracking_add = 10
+		ship_fire_rate_mult = 0.09
+		ship_weapon_damage = 0.10
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
