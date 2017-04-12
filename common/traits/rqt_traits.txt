@@ -19,7 +19,7 @@ rqtrait_reliquants_specialist = {
 		self_modifier = {
 			
 			# Every Reliquants anomaly category needs to be listed here
-			rqt_reliquants_cat_1_research_speed_mult = 0.5
-			rqt_reliquants_cat_1_research_fail_risk_add = -0.25
+			rqt_anomaly_discovery_cat_research_speed_mult = 0.5
+			rqt_anomaly_discovery_cat_research_fail_risk_add = -0.25
 		}
 }
