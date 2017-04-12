@@ -19,5 +19,9 @@ l_french:
  rqt_discovery.later.a: "Lancez les recherches!"
  rqt_discovery.later.b: "Nous avons d'autres priorités."
  
- reliquants_chain_title: "Précurseurs: les Reliquants"
- reliquants_chain_desc: "TODO"
+ rqt_gathering_info_chain_title: "Précurseurs: les Reliquants"
+ rqt_gathering_info_chain_desc: "TODO"
+ 
+ rqt_discovery.gathering_info.1.name: ""
+ rqt_discovery.gathering_info.1.desc: ""
+ rqt_discovery.gathering_info.1.a: ""

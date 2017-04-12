@@ -4,7 +4,7 @@
 namespace = rqt_discovery
 
 ### Discovery of the Reliquants
-# Ruins - success: launch Reliquants event-chain immediatly, or stop if the player don't want
+# Ruins - success: launch Reliquants event-chain + first special project immediatly, or stop if the player don't want
 ship_event = {
 	id = rqt_discovery.1
 	title = "rqt_discovery.1.name"
@@ -14,14 +14,19 @@ ship_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { owner = { set_country_flag = rqt_generated_reliquants } }
-	
 	option = {
 		name = "rqt_discovery.1.a"
 		owner = {
 			begin_event_chain = {
-				event_chain = "reliquants_chain"
+				event_chain = "rqt_gathering_info_chain"
 				target = ROOT
+			}
+		}
+		FROM = {
+			enable_special_project = {
+				name = "RELIQUANTS_GATHERING_INFO_RUINS"
+				location = this
+				owner = ROOT.owner
 			}
 		}
 	}
@@ -33,7 +38,7 @@ ship_event = {
 	}
 }
 
-# Ruins - failure: launch Reliquants event-chain about 20 years later (a scientist discovered them later)
+# Ruins - failure: launch Reliquants special project about 20 years later (a scientist discovered them later)
 ship_event = {
 	id = rqt_discovery.11
 	title = "rqt_discovery.11.name"
@@ -42,8 +47,6 @@ ship_event = {
 	location = FROM
 	
 	is_triggered_only = yes
-	
-	immediate = { owner = { set_country_flag = rqt_generated_reliquants } }
 	
 	option = {
 		name = "rqt_discovery.11.a"
@@ -63,8 +66,6 @@ ship_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { owner = { set_country_flag = rqt_generated_reliquants } }
-	
 	option = {
 		name = "rqt_discovery.21.a"
 	}
@@ -83,8 +84,18 @@ country_event = {
 		name = "rqt_discovery.later.a"
 		ROOT = {
 			begin_event_chain = {
-				event_chain = "reliquants_chain"
+				event_chain = "rqt_gathering_info_chain"
 				target = ROOT
+			}
+		}
+		random_system = {
+			every_system_planet = {
+				limit = { has_planet_flag = rqt_reliquants_ruins }
+				enable_special_project = {
+					name = "RELIQUANTS_GATHERING_INFO_RUINS"
+					location = this
+					owner = ROOT
+				}
 			}
 		}
 	}
@@ -92,5 +103,27 @@ country_event = {
 	option = {
 		name = "rqt_discovery.later.b"
 		ROOT = { add_influence = 100 }
+	}
+}
+
+# First special project "RUINS" completed
+ship_event = {
+	id = rqt_discovery.gathering_info.1
+	title = "rqt_discovery.gathering_info.1.name"
+	desc = "rqt_discovery.gathering_info.1.desc"
+	picture = GFX_evt_archaeological_dig
+	location = FROM
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rqt_discovery.gathering_info.1.a"
+		owner = {
+			add_event_chain_counter = { 
+				event_chain = "rqt_gathering_info_chain" 
+				counter = "ruins_analysed" 
+				amount = 1 
+			}
+		}
 	}
 }

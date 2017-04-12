@@ -10,7 +10,7 @@ anomaly_category = {
 	
 	spawn_chance = {
 		modifier = {
-			add = 2
+			add = 10
 			is_planet_class = pc_desert
 			FROM.owner = {
 				is_ai = no
@@ -19,7 +19,10 @@ anomaly_category = {
 		}
 	}
 	
-	on_spawn = {}
+	on_spawn = {
+		FROM.owner = { set_country_flag = rqt_generated_reliquants }
+		FROM = { set_planet_flag = rqt_reliquants_ruins }
+	}
 	
 	on_success = {}
 	

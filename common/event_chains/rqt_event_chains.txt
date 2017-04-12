@@ -1,7 +1,12 @@
 # This file is a part of the Reliquants mod, developped by Poslovitch.
 # Created 11/4/17 14:48:31
 
-reliquants_chain = {
+rqt_gathering_info_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_metropolis
+	counter = {
+		ruins_analysed = {
+			max = 3
+		}
+	}
 }

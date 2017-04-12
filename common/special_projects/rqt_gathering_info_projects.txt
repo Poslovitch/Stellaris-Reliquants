@@ -1,0 +1,25 @@
+# This file is a part of the Reliquants mod, developped by Poslovitch.
+# Created 12/4/17 15:16:23
+
+# RUINS
+special_project = {
+	key = "RELIQUANTS_GATHERING_INFO_RUINS"
+	cost = 0
+	days_to_research = 200
+	tech_department = society_technology
+	picture = GFX_evt_landing_ship
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill > 3
+	}
+	
+	on_success = {
+		ship_event = { id = rqt_discovery.gathering_info.1 }
+	}
+	
+	on_fail = {}
+}
